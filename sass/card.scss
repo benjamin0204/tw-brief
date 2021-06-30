@@ -35,11 +35,13 @@
 .card__header {
   color: var(--col-primary);
   font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .card__sub-header {
   color: lightgray;
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .card__price {
@@ -73,9 +75,16 @@
 }
 
 @media (max-width: 480px) {
+  .card__header {
+    margin-top: 2rem;
+  }
+
   .cards {
-    padding: 0 1rem;
+    padding: 2rem;
     margin-top: 20rem;
+  }
+  .cards__container {
+    padding: 0;
   }
   .cards__heading {
     color: black;
@@ -85,6 +94,7 @@
     display: block;
   }
   .card {
+    margin: 0;
     margin-top: 2rem;
   }
 }

@@ -34,7 +34,7 @@ nav label {
   display: none; }
 
 .navigation {
-  padding-right: 13rem;
+  padding-right: 10rem;
   background: var(--grad-main); }
 
 .navigation ul {
@@ -47,7 +47,13 @@ nav label {
   list-style: none;
   text-transform: uppercase;
   font-size: 1.75rem;
-  padding: 1rem; }
+  padding: 1.5rem;
+  transition: all 0.5s; }
+
+.navigation__item:hover {
+  color: #20cb65;
+  background-color: white;
+  border-radius: 100px; }
 
 /* Advanced Checkbox Hack */
 @media screen and (max-width: 44em) {
@@ -206,11 +212,13 @@ nav label {
 
 .card__header {
   color: var(--col-primary);
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem; }
 
 .card__sub-header {
   color: lightgray;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 .card__price {
   font-size: 5rem; }
@@ -238,15 +246,20 @@ nav label {
   font-weight: 300; }
 
 @media (max-width: 480px) {
+  .card__header {
+    margin-top: 2rem; }
   .cards {
-    padding: 0 1rem;
+    padding: 2rem;
     margin-top: 20rem; }
+  .cards__container {
+    padding: 0; }
   .cards__heading {
     color: black;
     font-size: 4rem; }
   .cards__container {
     display: block; }
   .card {
+    margin: 0;
     margin-top: 2rem; } }
 
 /* FEATURES STYLES */
