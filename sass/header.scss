@@ -1,0 +1,52 @@
+/* HEADER STYLES */
+
+.header {
+  display: flex;
+  align-items: center;
+  color: var(--col-text-white);
+  background: var(--grad-main);
+  height: 100rem;
+  padding-bottom: 45rem;
+  margin-bottom: -45rem;
+}
+
+.header__left {
+  flex: 1;
+  padding: 13rem;
+}
+
+.header__text {
+  font-size: 3rem;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+.header__right {
+  flex: 1;
+  padding: 10rem;
+}
+
+.header__right img {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 50rem;
+    background: var(--grad-mob);
+  }
+  .header__left {
+    padding: 3rem;
+  }
+  .header__right {
+    padding: 0;
+  }
+  .header__right,
+  img {
+    width: 100%;
+    scale: 1.1;
+  }
+}

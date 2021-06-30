@@ -1,0 +1,36 @@
+:root {
+  --grad-main: linear-gradient(to left, rgb(6, 238, 252), rgb(61, 162, 254));
+  --grad-mob: linear-gradient(to top, rgb(6, 238, 252), rgb(61, 162, 254));
+  /* Colours */
+  --col-primary: rgb(61, 162, 254);
+  --col-white-primary: white;
+  --col-grey: rgb(238, 238, 238);
+  /* Text */
+  --col-text-white: white;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a::after,
+a:visited {
+  color: inherit;
+}

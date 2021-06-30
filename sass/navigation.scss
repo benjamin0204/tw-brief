@@ -1,0 +1,144 @@
+#button,
+nav label {
+  display: none;
+}
+.navigation {
+  padding-right: 13rem;
+  background: var(--grad-main);
+}
+.navigation ul {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navigation__item {
+  color: var(--col-text-white);
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+/* Advanced Checkbox Hack */
+@media screen and (max-width: 44em) {
+  .navigation {
+    padding-right: 0;
+  }
+  @-webkit-keyframes bugfix {
+    from {
+      padding: 0;
+    }
+    to {
+      padding: 0;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* custom-dropdown */
+  nav[role="custom-dropdown"] {
+    position: relative;
+    width: 100%;
+
+    a {
+      color: white !important;
+    }
+    a,
+    label {
+      color: white;
+      text-decoration: none;
+      font: 1.4em sans-serif;
+      transition: color 0.3s ease-in-out;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      width: 100%;
+      list-style: none;
+
+      > li {
+        float: left;
+        padding: 0.55em 0.55em;
+        width: 19%;
+        background-color: var(--grad-main);
+        text-align: center;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-property: box-shadow, color;
+        box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.85);
+          color: #fff;
+          box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35),
+            inset 0 0 0 2em rgba(0, 0, 0, 0.3);
+
+          > a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  /* small screens */
+
+  html,
+  body {
+    margin: 0;
+  }
+
+  nav[role="custom-dropdown"] {
+    ul {
+      display: none;
+      height: 100%;
+    }
+
+    label {
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 2.25em;
+      padding: 0.45em;
+      font-size: 2.5rem;
+      margin: 0;
+      background-color: var(--col-primary);
+    }
+
+    label:after {
+      position: absolute;
+      right: 0.25em;
+      top: 0;
+      content: "\2261";
+      font-size: 1.8em;
+    }
+
+    input[type="checkbox"]:checked ~ label:after {
+      color: #ccc;
+    }
+
+    input[type="checkbox"]:checked ~ ul {
+      display: block;
+      font-size: 1.2rem;
+
+      > li {
+        width: 100%;
+        opacity: 0.8;
+        text-align: left;
+
+        &:after {
+          color: white;
+          position: absolute;
+          right: 0.25em;
+          content: "\203A";
+          font: bold 1.4em sans-serif;
+        }
+      }
+    }
+  }
+}

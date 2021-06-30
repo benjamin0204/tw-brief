@@ -1,0 +1,26 @@
+/* CALL TO ACTION STYLES */
+
+.cta {
+  text-align: center;
+  padding: 15rem 45rem;
+  background-color: rgb(39, 42, 61);
+  margin-top: 6rem;
+}
+
+.cta__header {
+  font-size: 3rem;
+  color: var(--col-primary);
+  margin-bottom: 2rem;
+}
+
+.cta__text {
+  color: var(--col-text-white);
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 3rem;
+  }
+}

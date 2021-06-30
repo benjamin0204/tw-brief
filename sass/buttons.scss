@@ -1,0 +1,112 @@
+/* BUTTONS */
+
+.btn-primary {
+  font-size: 1rem;
+  position: relative;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 55px;
+  width: 150px;
+  opacity: 1;
+  background-color: var(--col-white-primary);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.btn-primary .btn-primaryspan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(36, 38, 50);
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.btn-primary:hover {
+  animation: btnrotate 0.7s ease-in-out both;
+}
+
+.btn-primary:hover .btn-primaryspan {
+  animation: btnstorm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes btnrotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes btnstorm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+.btn-secondary-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-secondary-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-secondary-hover:focus {
+  outline: none;
+}
+
+.btn-secondary-hover {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  /* box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75); */
+}

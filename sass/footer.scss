@@ -1,0 +1,52 @@
+/* FOOTER STYLES */
+
+.footer {
+  background-color: var(--col-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.footer__left {
+  margin-left: 10rem;
+  color: gray;
+}
+
+.footer__copyright {
+}
+
+.footer__right {
+  padding: 10rem;
+  text-transform: uppercase;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+}
+
+.footer__item {
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.footer__item:hover {
+  color: gray;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem;
+    display: block;
+    font-size: 1rem;
+  }
+  .footer__right {
+    padding: 0;
+    margin: 0;
+  }
+  .footer__left {
+    padding: 1rem;
+    margin: 0;
+  }
+}

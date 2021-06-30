@@ -1,0 +1,48 @@
+/* FEATURES STYLES */
+
+.features {
+  padding: 3rem 10rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.feature-box__row {
+  display: flex;
+  align-content: space-between;
+}
+
+.feature-box {
+  padding: 4rem;
+  text-align: center;
+}
+
+.feature-box__icon {
+  margin: 3rem;
+  /*  Icon Size */
+  font-size: 7rem;
+  /* Placing a gradient onto the background of the icon and clipping it through  */
+  background-image: var(--grad-main);
+  background-clip: text;
+  color: transparent;
+}
+
+.feature-box__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-box__text {
+  font-weight: light;
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+@media (max-width: 480px) {
+  .features {
+    display: block;
+    padding: 0 2rem;
+  }
+  .feature-box {
+    padding: 3rem;
+  }
+}
